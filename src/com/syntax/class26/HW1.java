@@ -4,7 +4,9 @@ import java.util.ArrayList;
 
 public class HW1 {
     public static void main(String[] args) {
-        ArrayList<String> names = new ArrayList<>();
+        ArrayList<String> names = new ArrayList<>(5);
+        //always good to specify initial capacity it improves the performance
+        //default capacity is 10
         names.add("Bika");
         names.add("Dina");
         names.add("Alina");

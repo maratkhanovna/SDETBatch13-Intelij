@@ -12,7 +12,7 @@ public class HW4 {
 
         for (int i=0; i< drinks.size(); i++){
             if (drinks.get(i).contains("a") || drinks.get(i).contains("e")){
-                drinks.set(i, "water");
+                drinks.set(i, "water");// replace
             }
         }
         System.out.println("drinks = " + drinks);

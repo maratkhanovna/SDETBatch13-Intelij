@@ -1,7 +1,8 @@
 package com.syntax.class26;
 
-import java.sql.SQLOutput;
+
 import java.util.ArrayList;
+import java.util.Iterator;
 
 public class HW2 {
     public static void main(String[] args) {
@@ -11,7 +12,7 @@ public class HW2 {
         cars.add("Tesla");
         cars.add("Hyundai");
 
-        for (String car:cars) {
+        for (String car:cars) {//THE BEST WAY TO USE
             System.out.print(car+" ");
         }
         System.out.println();
@@ -22,5 +23,9 @@ public class HW2 {
         System.out.println();
         System.out.println(cars);
 
+        Iterator<String> iterator = cars.iterator();
+        while(iterator.hasNext()){
+            System.out.print(iterator.next()+" ");
+        }
     }
 }

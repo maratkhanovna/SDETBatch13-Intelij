@@ -9,11 +9,7 @@ public class HW3 {
         words.add("Terminal");
         words.add("Service");
         words.add("Version");
-        for(int i=0; i< words.size(); i++){
-           if(words.get(i).endsWith("e")){
-               words.remove(i);
-            }
-        }
+        words.removeIf(s -> s.endsWith("e"));
         System.out.println("words = " + words);
     }
 }
