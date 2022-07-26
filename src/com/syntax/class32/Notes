@@ -1,0 +1,42 @@
+Exceptions in Java:
+    Exceptions are unwanted behaviors that occur during the runtime(when java application is running).
+    In Exceptions Handling we write some kind of backup code to handle these runtime issues.
+Why we should learn exceptions handling:
+    If we don't handle exceptions it can lead to bad user experience which in turn leads
+    to low profits and bad reputation for the company.
+How we handle exceptions:
+    we handle exceptions using below code blocks and keywords.
+    try catch block finally block try catch finally throw and throws
+Let's consider the below scenario:
+    1) Read the data from an Excel file.
+    2) Execute a loop to go through all the rows in an Excel file from Sheet1.
+    3) open Syntax HRM Login page in GoogleChrome browser.
+    4) Insert the data in the username and password field.
+What are the things that can go wrong.
+    Assumption I have tested this code very well on my computer and it works perfectly fine.
+    No one has changed the code.
+Issue #1:
+    When Java program tries to read the file but gets a file not found exception.
+Possible causes:
+    1) Someone has deleted, moved or renamed the file to a different location
+    2) File got corrupted because of the virus windows is not responding or there are
+    not enough resources on my computer to read a file.
+Issue #2:
+    Someone like Oleg changed the sheet name in Sameer's Excel File.
+Issue #3:
+    Internet is down or website is not responding, or GoggleChrome is not installed
+    or driver for GoogleChrome is not present any more in the specified location
+Issue #4:
+    Password of the application is changed an it is not updated in the Excel file etc.
+
+
+
+
+
+
+
+
+
+
+
+

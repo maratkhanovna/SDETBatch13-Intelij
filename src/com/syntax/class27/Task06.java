@@ -13,14 +13,12 @@ public class Task06 {
     Using for loop/advanced for loop/ iterator access all methods of the class.
          */
         public static void main(String[] args) {
-            Car cars = new Car("AllState", "Tesla");
-            Pet pets = new Pet("Geico", "Dog");
-            Health health = new Health("MetroPlus");
+
 
             ArrayList<Insurance> insurances = new ArrayList<>();
-            insurances.add(health);
-            insurances.add(cars);
-            insurances.add(pets);
+            insurances.add(new Pet("Petco", "Dog"));
+            insurances.add(new Car("AllState", "Tesla"));
+            insurances.add(new Health("MetroPlus"));
 
             for (Insurance insurance : insurances) {
                 insurance.getQuote();
@@ -49,12 +47,12 @@ class Car extends Insurance{
 
     @Override
     void getQuote() {
-        System.out.println("To get a quote fill out the form and press submit");
+        System.out.println("2% of your car price for model "+carModel);
     }
 
     @Override
     void cancelInsurance() {
-        System.out.println("To cancel insurance submit the following form");
+        System.out.println("car Insurance cancelled");
     }
 }
 class Pet extends Insurance{
@@ -67,12 +65,12 @@ class Pet extends Insurance{
 
     @Override
     void getQuote() {
-        System.out.println("To get a quote fill out the form and press submit");
+        System.out.println("90$ fo the insurance for pet type "+petType);
     }
 
     @Override
     void cancelInsurance() {
-        System.out.println("To cancel insurance submit the following form");
+        System.out.println("pet insurance cancelled");
     }
 }
 class Health extends Insurance{
@@ -83,11 +81,11 @@ class Health extends Insurance{
 
     @Override
     void getQuote() {
-        System.out.println("To get a quote fill out the form and press submit");
+        System.out.println("300$ per month");
     }
 
     @Override
     void cancelInsurance() {
-        System.out.println("To cancel insurance submit the following form");
+        System.out.println("Health insurance cancelled");
     }
 }

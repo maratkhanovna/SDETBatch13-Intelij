@@ -23,5 +23,7 @@ public class ConfigFileDemo {
         System.out.println(properties.get("user"));
         System.out.println(properties.get("password"));
         System.out.println(properties.get("URL"));
+
+        fileInputStream.close();
     }
 }
